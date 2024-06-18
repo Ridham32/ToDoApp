@@ -54,7 +54,7 @@ dependencies {
     annotationProcessor("androidx.room:room-compiler:2.5.2" )
     kapt("androidx.room:room-compiler:2.5.2")
     //new dependencies for live data
-    implementation "androidx.room:room-ktx:2.5.2"
-    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.1"
+    implementation("androidx.room:room-ktx:2.5.2")
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.1")
 
 }
