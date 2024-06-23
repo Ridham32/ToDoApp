@@ -5,11 +5,12 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 
 @Entity
-data class ListEntity(
+data class ToDoEntity (
     @PrimaryKey(autoGenerate = true)
-    var id: Int?=0,
+    var id:Int =0,
+
     @ColumnInfo
-    var taskTitle: String?= null
+    var taskTodo: String? = null,
 
 
 )

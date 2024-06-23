@@ -1,8 +1,15 @@
 package com.ridhamsharma.to_doapp
 
+import android.app.Application
+import androidx.lifecycle.AndroidViewModel
+import androidx.lifecycle.LiveData
 
-import androidx.lifecycle.ViewModel
+class TodoViewModel(application: Application): AndroidViewModel(application) {
 
-class TodoViewModel: ViewModel() {
+    var toDoEntity: LiveData<List<ToDoEntity>>
+    var todoDao: ToDoDao
 
+    init{
+
+    }
 }
