@@ -13,12 +13,12 @@ interface ToDoDao {
     suspend fun addTask(toDoEntity: ToDoEntity)
 
     @Delete
-    suspend fun delete(toDoEntity: ToDoEntity)
+    suspend fun deleteTask(toDoEntity: ToDoEntity)
 
     @Update
-    suspend fun Update(toDoEntity: ToDoEntity)
+    suspend fun updateTask(toDoEntity: ToDoEntity)
 
-    @Query("SELECT * from ToDoEntity")
+    @Query("SELECT * FROM ToDoEntity")
     fun getTaskDetails():LiveData<List<ToDoEntity>>
 
 }

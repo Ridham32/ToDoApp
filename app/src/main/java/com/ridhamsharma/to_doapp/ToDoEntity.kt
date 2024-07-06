@@ -1,5 +1,6 @@
 package com.ridhamsharma.to_doapp
 
+
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
@@ -10,7 +11,5 @@ data class ToDoEntity (
     var id:Int =0,
 
     @ColumnInfo
-    var taskTodo: String? = null,
-
-
+    var taskTodo: String? = null
 )

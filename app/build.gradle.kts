@@ -33,7 +33,7 @@ android {
         targetCompatibility = JavaVersion.VERSION_17
     }
     kotlinOptions {
-        jvmTarget = "1.8"
+        jvmTarget = "17"
     }
     buildFeatures{
         viewBinding = true
@@ -57,4 +57,8 @@ dependencies {
     implementation("androidx.room:room-ktx:2.5.2")
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.1")
 
+}
+
+kapt {
+    correctErrorTypes = true
 }
