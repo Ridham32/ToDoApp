@@ -12,7 +12,6 @@ class RecyclerViewAdapter(var todoList: ArrayList<ToDoEntity>,var recyclerInterf
        class ViewHolder( view: View):RecyclerView.ViewHolder(view) {
            var tvtask_title = view.findViewById<TextView>(R.id.tvtask_title)
            var ivDelete = view.findViewById<ImageView>(R.id.ivDelete)
-           var checkboxView = view.findViewById<CheckBox>(R.id.checkboxView)
        }
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         var view = LayoutInflater.from(parent.context).inflate(R.layout.listview_activity,parent,false)
