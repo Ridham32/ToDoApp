@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity(), RecyclerInterface {
         setContentView(binding?.root)
         layoutManager = LinearLayoutManager(this)
         todoDb = TodoDb.getDatabase(this)
-        viewModel = ViewModelProvider(this).get(TodoViewModel::class.java)
+        viewModel = ViewModelProvider(this)[TodoViewModel::class.java]
         adapter = RecyclerViewAdapter(todoEntityList,this)
         binding?.recycler?.layoutManager = layoutManager
         binding?.recycler?.adapter = adapter
@@ -35,8 +35,8 @@ class MainActivity : AppCompatActivity(), RecyclerInterface {
         }
 
             binding?.fab?.setOnClickListener{
-                var dialog = Dialog(this)
-                var dialogBinding = DialogboxAddviewBinding.inflate(layoutInflater)
+                val dialog = Dialog(this)
+                val dialogBinding = DialogboxAddviewBinding.inflate(layoutInflater)
                 dialog.setContentView(dialogBinding.root)
                 dialog.getWindow()?.setLayout(
                     ViewGroup.LayoutParams.MATCH_PARENT,
@@ -62,8 +62,8 @@ class MainActivity : AppCompatActivity(), RecyclerInterface {
     }
 
     override fun onUpdateClick(position: Int) {
-        var dialog = Dialog(this)
-        var dialogBinding = DialogboxEditviewBinding.inflate(layoutInflater)
+        val dialog = Dialog(this)
+        val dialogBinding = DialogboxEditviewBinding.inflate(layoutInflater)
         dialog.setContentView(dialogBinding.root)
         dialog.getWindow()?.setLayout(
             ViewGroup.LayoutParams.MATCH_PARENT,

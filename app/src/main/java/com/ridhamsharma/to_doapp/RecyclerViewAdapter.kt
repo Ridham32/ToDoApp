@@ -14,7 +14,7 @@ class RecyclerViewAdapter(var todoList: ArrayList<ToDoEntity>,var recyclerInterf
            var ivDelete = view.findViewById<ImageView>(R.id.ivDelete)
        }
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        var view = LayoutInflater.from(parent.context).inflate(R.layout.listview_activity,parent,false)
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.listview_activity,parent,false)
         return ViewHolder(view)
     }
 
