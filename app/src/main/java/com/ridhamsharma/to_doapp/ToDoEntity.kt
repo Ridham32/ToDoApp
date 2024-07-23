@@ -11,5 +11,7 @@ data class ToDoEntity (
     var id:Int =0,
 
     @ColumnInfo
-    var taskTodo: String? = null
+    var taskTodo: String? = null,
+
+
 )

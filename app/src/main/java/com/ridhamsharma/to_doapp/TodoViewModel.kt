@@ -33,6 +33,7 @@ class TodoViewModel(application: Application): AndroidViewModel(application) {
         viewModelScope.launch {
             todoDao.updateTask(toDoEntity)
         }
+
     }
 
 }

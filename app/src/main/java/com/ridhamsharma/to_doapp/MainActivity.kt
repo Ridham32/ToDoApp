@@ -82,4 +82,6 @@ class MainActivity : AppCompatActivity(), RecyclerInterface {
         }
         dialog.show()
     }
+
+
 }

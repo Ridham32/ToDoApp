@@ -31,5 +31,6 @@ class RecyclerViewAdapter(var todoList: ArrayList<ToDoEntity>,var recyclerInterf
             recyclerInterface.onUpdateClick(position)
         }
 
+
     }
 }
